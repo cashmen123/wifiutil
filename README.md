@@ -26,3 +26,13 @@ iOS command-line tool for WiFi-related operation.
 # License
 Licensed under:
 <ul><li><a href="http://spdx.org/licenses/MIT.html">MIT License</a></li></ul>
+
+
+>*  [采用MobileWiFi.framework实现 的背景](https://zhangkn.github.io/2018/04/SBWiFiManager/)
+
+```
+ 实现Associate to wifi的，在iOS 版本10 之后，就比较困难，因为苹果将SBWiFiManager 的joinNetwork：password： 移除掉； 且在iOS10 中SBWiFiManager 的t_manager、t_device、t_currentNetwork 均采用 struct存储，提高了安全性。
+
+ 因此要实现自动 Associate to wifi 的话，我从hopper 中看到sb 中使用WiFiManagerClientCreate() 实现连接Wi-Fi,因此就才想到使用MobileWiFi.framework 实现是最佳的捷径
+```
+
