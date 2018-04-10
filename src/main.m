@@ -9,11 +9,13 @@
 #import <stdio.h>
 #import <CoreFoundation/CoreFoundation.h>
 #import <MobileWiFi/MobileWiFi.h>
-#import <Foundation/NSTask.h>
+// #import <Foundation/NSTask.h> https://github.com/nanotech/iphoneheaders/blob/master/Foundation/NSTask.h
 #import "UtilNetwork.h"
 #import "UtilNetworksManager.h"
 #import "Constants.h"
 #include <String.h>
+
+#import <Foundation/NSTask.h>
 
 //static WiFiManagerRef _manager;
 //static void scan_callback(WiFiDeviceClientRef device, CFArrayRef results, CFErrorRef error, void *token);
